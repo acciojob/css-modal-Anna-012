@@ -1,12 +1,11 @@
-//your JS code here. If required.
 // Get elements
 const modal = document.getElementById('modal');
 const openModalButton = document.getElementById('openModal');
 const closeModalButton = document.querySelector('.close-modal');
 
-// Function to open the modal
+// Function to open the modal with 'flex' display
 openModalButton.addEventListener('click', () => {
-    modal.style.display = 'flex';
+    modal.style.display = 'flex';  // Ensure display is set to 'flex'
 });
 
 // Function to close the modal when clicking outside the modal content
