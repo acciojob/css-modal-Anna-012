@@ -1,21 +1,21 @@
-// Get elements
-const modal = document.getElementById('modal');
-const openModalButton = document.getElementById('openModal');
-const closeModalButton = document.querySelector('.close-modal');
+// Get the modal, button, and close elements
+const modal = document.getElementById("myModal");
+const openModalBtn = document.getElementById("openModal");
+const closeModalBtn = document.querySelector(".close-modal");
 
-// Function to open the modal with 'flex' display
-openModalButton.addEventListener('click', () => {
-    modal.style.display = 'flex';  // Ensure display is set to 'flex'
+// Open modal when button is clicked
+openModalBtn.addEventListener("click", () => {
+    modal.style.display = "block";
 });
 
-// Function to close the modal when clicking outside the modal content
-window.addEventListener('click', (event) => {
+// Close modal when clicking on the close button
+closeModalBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", (event) => {
     if (event.target === modal) {
-        modal.style.display = 'none';
+        modal.style.display = "none";
     }
-});
-
-// Function to close the modal when the close button is clicked
-closeModalButton.addEventListener('click', () => {
-    modal.style.display = 'none';
 });
